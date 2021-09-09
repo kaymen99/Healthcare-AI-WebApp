@@ -1,0 +1,75 @@
+{% extends "disease_page.html" %}
+{% block page %}
+
+  <br>
+  <br>
+  <br>
+<div class="container">
+  <form action="/predict" method="POST">
+    <h3>Enter the Following parameters :</h3>
+    <hr>
+
+    <div class="row">
+        <div class="col-md-4 col-md-offset-4">
+          <label for="age">Age</label>
+          <input class="form-control input-sm" type="number" min="0" required="required" name="age", placeholder="age" >
+        </div>
+        <div class="col-md-4 col-md-offset-4 ">
+          <label for="Total_Bilirubin">Total_Bilirubin</label>
+          <input class="form-control" type="number" min="0" step="0.001" id="Total_Bilirubin" name="Total_Bilirubin" placeholder="Total_Bilirubin" required="required">
+        </div>
+          
+        <div class="col-md-4 col-md-offset-4">
+          <label for="Direct_Bilirubin">Direct_Bilirubin</label>
+          <input class="form-control" type="number" min="0" id="Direct_Bilirubin" step="0.001" name="Direct_Bilirubin" placeholder="Direct_Bilirubin" required="required">
+        </div>
+        <div class="col-md-4 col-md-offset-4">
+          <label for="Alkaline_Phosphotase">Alkaline_Phosphotase</label>
+          <input class="form-control" type="number" id="Alkaline_Phosphotase" min="0" step="0.001" name="Alkaline_Phosphotase" required="required" placeholder="Alkaline_Phosphotase">
+        </div>
+        <div class="col-md-4 col-md-offset-4">
+          <label for="Alamine_Aminotransferase">Alamine_Aminotransferase </label>
+          <input class="form-control" required="required" step="0.01" type="number" min="0" id="Alamine_Aminotransferase" name="Alamine_Aminotransferase" placeholder="Alamine_Aminotransferase">
+        </div>
+        <div class="col-md-4 col-md-offset-4">
+          <label for="Aspartate_Aminotransferase">Aspartate_Aminotransferase</label>
+          <input class="form-control" required="required" step="0.001" type="number" min="0" id="Aspartate_Aminotransferase" name="Aspartate_Aminotransferase" placeholder="Aspartate_Aminotransferase">
+
+        </div>
+        <div class="col-md-4 col-md-offset-4">
+          <label for="Total_Protiens">Total_Protiens</label>
+          <input class="form-control" required="required" step="0.001" type="number" min="0" id="Total_Protiens" name="Total_Protiens" placeholder="Total_Protiens">
+        </div>
+        <div class="col-md-4 col-md-offset-4">
+          <label for="Albumin">Albumin</label>
+          <input class="form-control" required="required" step="0.001" type="number" min="0" id="Albumin" name="Albumin" placeholder="Albumin">
+        </div>
+        <div class="col-md-4 col-md-offset-4">
+          <label for="Albumin_and_Globulin_Ratio">Albumin_and_Globulin_Ratio</label>
+          <input class="form-control" required="required" step="0.001" type="number" min="0"  id="Albumin_and_Globulin_Ratio" name="Albumin_and_Globulin_Ratio" placeholder="Albumin_and_Globulin_Ratio">
+            
+        </div>
+        <div class="col-md-4 col-md-offset-4">
+          <label for="Gender">Gender</label>
+          <select class="form-control" id="Gender" name = "Gender" required="required" placeholder="Gender">
+            <option value="0">male</option>
+            <option value="1">female</option>
+          </select>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <div class="col-md-4 col-md-offset-4 text-center">
+         <button type="submit" class="btn btn-success" value="submit">predict</button>
+    </div>
+
+   
+    
+</form>
+</div>
+<br>
+<br>
+<br>
+{% endblock %}
