@@ -1,0 +1,53 @@
+{% extends "disease_page.html" %}
+{% block page %}
+  <br>
+  <br>
+  <br>
+  <br>
+  <h3 style="margin: auto;width: 80%; text-align: center; margin-top: 20px;  text-transform: uppercase">Pneumonia Disease Prediction</h3>
+
+  <form action="{{ url_for('prediction.upload_file')}}" method="POST" enctype="multipart/form-data" style="margin-top: 30px; width: 80%; text-align: center; margin: auto">
+    <br>
+    <br>
+    <br>
+    <div class="row">
+        <div class="col-md-4">
+          <h5>Upload your chest X Ray image : </h5>
+        </div>
+        <div class="col-md-4">
+          <div class="mb-3 pt-5">
+            <input class="form-control" name="file" type="file" id="formFile" onchange="preview_image(event)" required="required">
+          </div>
+        </div>
+    </div> 
+    <img id="output-image" class="rounded mx-auto d-block" src="{{ url_for('prediction.send_file', filename=file_name)}}" onerror="this.src='./static/images/upload.png'" style ="max-width: 500px; max-height: 450px; margin-top: 30px; margin-bottom: 10px"  />
+    <p style="font-style: italic">{{ file_name }}</p>
+    <br>
+    <br>
+    <div class="col-md-4 col-md-offset-4 text-center">
+       <button type="submit" class="btn btn-success" value="submit">predict</button>
+    </div>
+  </form>
+  <br>
+  <br>
+  <br>
+    
+    
+   
+  
+
+
+  <script type="text/javascript">
+    function preview_image(event) {
+      var reader = new FileReader();
+      reader.onload = function () {
+        var output = document.getElementById('output-image')
+        output.src = reader.result;
+      }
+      reader.readAsDataURL(event.target.files[0]);
+      }
+    </script>
+  <hr>
+
+{% endblock %}
+

@@ -1,0 +1,112 @@
+{% extends "disease_page.html" %}
+{% block page %}
+<br>
+<br>
+<br>
+<div id="disease_page">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-sm-6 wow fadeInLeft" data-wow-delay="0.5s">
+						<h3>Heart Disease</h3>
+						<h4>Overview</h4>
+						<p>	Heart disease describes a range of conditions that affect your heart. Heart diseases include:
+							Blood vessel disease, such as coronary artery disease
+							Heart rhythm problems (arrhythmias)
+							Heart defects you're born with (congenital heart defects)
+							Heart valve disease
+							Disease of the heart muscle
+							Heart infection
+							Many forms of heart disease can be prevented or treated with healthy lifestyle choices.
+						</p>
+						
+					</div>
+					
+					<div class="col-md-6 col-sm-6 wow fadeInRight" data-wow-delay="0.5s">
+						<img class="ill_image" src="./static/images/disease_img/theheart1.jpg">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6 col-sm-6 wow fadeInRight" data-wow-delay="0.5s">
+						<h4>Symptoms</h4>
+						<p>Common heart attack signs and symptoms include:</p>
+					    <ul>
+					      <li>Pressure, tightness, pain, or a squeezing or aching sensation in your chest or arms that may spread to your neck, jaw or back</li>
+					      <li>Nausea, indigestion, heartburn or abdominal pain</li>
+					      <li>Shortness of breath</li>
+					      <li>Cold sweat</li>
+					      <li>Fatigue</li>
+					      <li>Lightheadedness or sudden dizziness</li>
+					    </ul>
+
+					</div>
+				</div>
+				
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-sm-6 wow fadeInRight" data-wow-delay="0.5s">
+						<h3>Model</h3>
+						<p>To make the diagnosis you need to enter the following informations :</p>
+						<ul>
+							<li>age: age of the patient</li>
+							<li>gender: "Male", "Female" or "Other"</li>
+							<li>chest pain type: typical angina/atypical angina/non-anginal pain/asymptomatic)</li>
+							<li>resting blood pressure</li>
+							<li>serum cholestoral in mg/dl</li>
+							<li>fasting blood sugar > 120 mg/dl: yes or no</li>
+							<li>resting electrocardiographic results: normal, having ST-T wave abnormality, showing probable or definite left ventricular hypertrophy by Estes criteria)</li>
+							<li>maximum heart rate achieved</li>
+ 							<li>exercise induced angina</li>
+ 							<li>oldpeak: ST segment depression induced by exercise relative to rest</li>
+ 							<li>the slope of the peak exercise ST segment </li>
+
+						</ul>
+					</div>
+					<div class="col-md-6 col-sm-6  wow fadeInRight" data-wow-delay="0.5s">
+						<div class="flex-wrapper">
+						  <div class="single-chart">
+						    <svg viewBox="0 0 36 36" class="circular-chart orange">
+						      <path class="circle-bg"
+						        d="M18 2.0845
+						          a 15.9155 15.9155 0 0 1 0 31.831
+						          a 15.9155 15.9155 0 0 1 0 -31.831"
+						      />
+						      <path class="circle"
+						        stroke-dasharray="86, 100"
+						        d="M18 2.0845
+						          a 15.9155 15.9155 0 0 1 0 31.831
+						          a 15.9155 15.9155 0 0 1 0 -31.831"
+						      />
+						      <text x="18" y="20.35" class="percentage">90%</text>
+						    </svg>
+						    <h4 style="text-align: center;">Accuracy</h4>
+						  </div>
+						  </div>
+						</div>
+					</div>
+			
+					
+				</div>
+			</div>
+			<br>
+			<br>
+			<br>
+			<div class="prediction text-center">
+			    <a href="/heart_form" class="smoothScroll btn btn-success wow fadeInDown" data-wow-delay="2000">Predict</a>
+		  	</div>
+			<br>
+		  	<br>
+		  	<br>
+		  	<br>
+
+		</div>
+		
+
+{% endblock %}
+
+
+
+
+
+
+

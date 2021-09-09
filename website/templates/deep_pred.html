@@ -1,0 +1,29 @@
+{% extends "disease_page.html" %}
+{% block page %}
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  
+  <div class="container pt-5">
+  	<h3 style="margin: auto;width: 80%; text-align: center; margin-top: 20px;  text-transform: uppercase">Pneumonia Disease Prediction</h3>
+  <div style="width: 90%; margin: auto; text-align: center">
+      <img src="{{ url_for('prediction.send_file', filename=image_file_name)}}" style ="max-width: 500px; max-height: 450px; margin-top: 30px; margin-bottom: 10px">
+      <p style="font-style: italic">{{ image_file_name }}</p>
+
+      <h3 style="margin-top: 40px"><b>Prediction: <span style="color: green">{{ label }}</span></b></h3>
+      <h3><b>Accuracy : <span style="color: green;">{{ accuracy }} %</span></b></h3>
+      <br>
+      <br>
+      <div class="prediction text-center">
+        <a href="/" class="smoothScroll btn btn-success wow fadeInDown" data-wow-delay="2000">Back Home</a>
+      </div>
+  </div>
+  <br>
+  <br>
+    
+{% endblock %}
+

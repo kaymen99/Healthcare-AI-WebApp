@@ -1,0 +1,105 @@
+{% extends "disease_page.html" %}
+{% block page %}
+<br>
+<br>
+<br>
+<div id="disease_page">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-sm-6 wow fadeInLeft" data-wow-delay="0.5s">
+						<h3>Diabete</h3>
+						<h4>Overview</h4>
+						<p>	Diabetes mellitus refers to a group of diseases that affect how your body uses blood sugar (glucose). Glucose is vital to your health because it's an important source of energy for the cells that make up your muscles and tissues. It's also your brain's main source of fuel.
+
+						The underlying cause of diabetes varies by type. But, no matter what type of diabetes you have, it can lead to excess sugar in your blood. Too much sugar in your blood can lead to serious health problems.
+
+						Chronic diabetes conditions include type 1 diabetes and type 2 diabetes. Potentially reversible diabetes conditions include prediabetes and gestational diabetes. Prediabetes occurs when your blood sugar levels are higher than normal, but not high enough to be classified as diabetes. And prediabetes is often the precursor of diabetes unless appropriate measures are taken to prevent progression. Gestational diabetes occurs during pregnancy but may resolve after the baby is delivered.
+						</p>
+					</div>
+					
+					<div class="col-md-6 col-sm-6 wow fadeInRight" data-wow-delay="0.5s">
+						<center><img class="ill_image" src="./static/images/disease_img/thediabete1.jpg"></center>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6 col-sm-6 wow fadeInRight" data-wow-delay="0.5s">
+						<h4>Symptoms</h4>
+						<p>Diabetes symptoms vary depending on how much your blood sugar is elevated. Some people, especially those with prediabetes or type 2 diabetes, may sometimes not experience symptoms. In type 1 diabetes, 
+						symptoms tend to come on quickly and be more severe.
+						Some of the signs and symptoms of type 1 diabetes and type 2 diabetes are:
+						</p>
+					    <ul>
+					      <li>Increased thirst and extreme hunger</li>
+					      <li>Frequent urination</li>
+					      <li>Unexplained weight loss</li>
+					      <li>Presence of ketones in the urine (ketones are a byproduct of the breakdown of muscle and fat that happens when there's not enough available insulin)</li>
+					      <li>Fatigue</li>
+					      <li>Irritability</li>
+					      <li>Blurred vision</li>
+					    </ul>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-sm-6 wow fadeInRight" data-wow-delay="0.5s">
+						<h3>Model</h3>
+						<p>To make the diagnosis you need to enter the following informations :</p>
+						<ul>
+							<li>Pregnancies: Number of times pregnant</li>
+							<li>Glucose: Plasma glucose concentration a 2 hours in an oral glucose tolerance test</li>
+							<li>BloodPressure: Diastolic blood pressure (mm Hg)</li>
+							<li>SkinThickness: Triceps skin fold thickness (mm)</li>
+							<li>Insulin: 2-Hour serum insulin (mu U/ml)</li>
+							<li>BMI: Body mass index (weight in kg/(height in m)^2)</li>
+							<li>Diabetes pedigree function: a function which scores likelihood of diabetes based on family history</li>
+							<li>Age (years)</li>
+
+
+						</ul>
+					</div>
+					
+					<div class="col-md-6 col-sm-6  wow fadeInRight" data-wow-delay="0.5s">
+						<div class="flex-wrapper">
+						  <div class="single-chart">
+						    <svg viewBox="0 0 36 36" class="circular-chart orange">
+						      <path class="circle-bg"
+						        d="M18 2.0845
+						          a 15.9155 15.9155 0 0 1 0 31.831
+						          a 15.9155 15.9155 0 0 1 0 -31.831"
+						      />
+						      <path class="circle"
+						        stroke-dasharray="86, 100"
+						        d="M18 2.0845
+						          a 15.9155 15.9155 0 0 1 0 31.831
+						          a 15.9155 15.9155 0 0 1 0 -31.831"
+						      />
+						      <text x="18" y="20.35" class="percentage">86%</text>
+						    </svg>
+						    <h4 style="text-align: center;">Accuracy</h4>
+						  </div>
+						  </div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			<br>
+			<br>
+			<br>
+			<div class="prediction text-center">
+			    <a href="/diabete_form" class="smoothScroll btn btn-success wow fadeInDown" data-wow-delay="2000">Predict</a>
+		  	</div>
+			<br>
+		  	<br>
+		  	<br>
+		  	<br>
+
+		</div>
+		
+
+{% endblock %}
+
+
+
+

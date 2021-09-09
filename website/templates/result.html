@@ -1,0 +1,49 @@
+{% extends "disease_page.html" %}
+{% block page %}
+  
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <h2 class="pt-10 text-center">{{page}} Disease Prediction </h2>
+  
+
+  <div style="width: 90%; margin: auto; text-align: center">
+  	{% if prediction == 0 %}
+      <img src="./static/images/happy.jpg" style ="max-width: 500px; max-height: 450px; margin-top: 30px; margin-bottom: 20px">
+      <br>
+      <br>
+      <p style="font-style: italic; font-size: 20px">No need to fear. You have no dangerous symptoms of the {{page}} disease</p>
+      <br>
+      <br>
+       <div class="prediction text-center">
+		    <a href="/" class="smoothScroll btn btn-success wow fadeInDown" data-wow-delay="2000">Back Home</a>
+	  	</div>
+      <br>
+      <br>
+
+    {% elif prediction == 1 %}
+      <img src="./static/images/sad.png" style ="max-width: 500px; max-height: 450px; margin-top: 30px; margin-bottom: 20px">
+      <br>
+      <br>
+      <p style="font-style: italic; font-size: 20px">Sorry, it seems that you are in risk of getting {{page}} disease</p>
+      <br>
+      <br>
+
+
+      <div class="prediction text-center">
+		    <a href="/" class="smoothScroll btn btn-success wow fadeInDown" data-wow-delay="2000">Back Home</a>
+	  	</div>
+
+
+     {% endif %}
+  </div>
+  <br>
+  <br>
+  <br>
+
+    
+{% endblock %}
