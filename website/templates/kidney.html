@@ -1,0 +1,119 @@
+{% extends "disease_page.html" %}
+{% block page %}
+  <br>
+  <br>
+  <br>
+
+<div class="container">
+  <form action="/predict" method="POST">
+    <h3>Enter the Following parameters :</h3>
+    <hr>
+
+    <div class="row">
+        <div class="col-md-4 col-md-offset-4">
+          <label for="age">Age</label>
+          <input class="form-control input-sm" type="number" min="0" required="required" name="age", placeholder="age" >
+        </div>
+        <div class="col-md-4 col-md-offset-4 ">
+                
+          <label for="bp">blood_pressure</label>
+          <input class="form-control" type="number" min="0" step="0.001" id="blood_pressure" name="blood_pressure" placeholder="blood_pressure" required="required">
+        </div>
+          
+        <div class="col-md-4 col-md-offset-4">
+          <label for="al">Specific_Gravity</label>
+          <input class="form-control" type="number" min="0" id="Specific_Gravity" step="0.001" name="Specific_Gravity" placeholder="Specific_Gravity" required="required">
+        </div>
+        <div class="col-md-4 col-md-offset-4">
+          <label for="bu">Blood_Glucose_Random</label>
+          <input class="form-control" type="number" min="0" id="Blood_Glucose_Random" step="0.001" name="Blood_Glucose_Random" required="required" placeholder="Blood Glucose Random">
+        </div>
+        <div class="col-md-4 col-md-offset-4">
+          <label for="sc">Blood_Urea : </label>
+          <input class="form-control" required="required" step="0.01" type="number" min="0" id="Blood_Urea" name="Blood_Urea" placeholder="Blood Urea">
+        </div>
+        <div class="col-md-4 col-md-offset-4">
+          <label for="hemo">Serum_Creatinine : </label>
+          <input class="form-control" required="required" step="0.001" type="number" min="0"  id="Serum_Creatinine" name="Serum_Creatinine" placeholder="Serum Creatinine">
+
+        </div>
+        <div class="col-md-4 col-md-offset-4">
+          <label for="pcv">Hemoglobin : </label>
+          <input class="form-control" required="required" step="0.001" type="number" min="0" id="Hemoglobin" name="Hemoglobin" placeholder="Hemoglobin">
+        </div>
+        <div class="col-md-4 col-md-offset-4">
+          <label for="htn">Pus Cell Clumps: </label>
+          <select class="form-control" id="Pus Cell Clumps" name = "Pus Cell Clumps"  min="0" required="required" placeholder="Pus Cell Clumps">
+            <option value="0">notpresent</option>
+            <option value="1">present</option>
+          </select>
+        </div>
+        <div class="col-md-4 col-md-offset-4">
+          <label for="dm">Bacteria: </label>
+          <select class="form-control" id="Bacteria" name = "Bacteria" required="required" placeholder="Bacteria">
+            <option value="0">notpresent</option>
+            <option value="1">present</option>
+          </select>
+            
+        </div>
+        <div class="col-md-4 col-md-offset-4">
+          <label for="appet">Hypertension: </label>
+          <select class="form-control" id="Hypertension" name = "Hypertension" required="required" placeholder="Hypertension">
+            <option value="0">no</option>
+            <option value="1">yes</option>
+          </select>
+        </div>
+        <div class="col-md-4 col-md-offset-4">
+          <label for="appet">Diabetes Mellitus: </label>
+          <select class="form-control" id="Diabetes Mellitus" name = "Diabetes Mellitus" required="required" placeholder="Diabetes Mellitus">
+            <option value="0">no</option>
+            <option value="1">yes</option>
+          </select>
+        </div>
+        <div class="col-md-4 col-md-offset-4">
+                
+          <label for="appet">Coronary Artery Disease: </label>
+          <select class="form-control" id="Coronary Artery Disease" name = "Coronary Artery Disease" required="required" placeholder="Coronary Artery Disease">
+            <option value="0">no</option>
+            <option value="1">yes</option>
+          </select>
+        </div>
+        <div class="col-md-4 col-md-offset-4">
+          <label for="appet">Appetite: </label>
+          <select class="form-control" id="Appetite" name = "Appetite" required="required" placeholder="Appetite">
+            <option value="0">good</option>
+            <option value="1">poor</option>
+          </select>
+        </div>
+        <div class="col-md-4 col-md-offset-4">
+          <label for="appet">Pedal Edema: </label>
+          <select class="form-control" id="Pedal Edema" name = "Pedal Edema" required="required" placeholder="Pedal Edema">
+            <option value="0">no</option>
+            <option value="1">yes</option>
+          </select>
+        </div>
+        <div class="col-md-4 col-md-offset-4">
+           <label for="appet">Anemia: </label>
+            <select class="form-control" id="Anemia" name = "Anemia" required="required" placeholder="Anemia">
+              <option value="0">no</option>
+              <option value="1">yes</option>
+            </select>
+        </div>
+    </div>
+
+   
+    <br>
+    <br>
+    <div class="col-md-4 col-md-offset-4 text-center">
+         <button type="submit" class="btn btn-success" value="submit">predict</button>
+    </div>
+   
+    
+</form>
+</div>
+<br>
+<br>
+<br>
+<br>
+
+{% endblock %}
