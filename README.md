@@ -16,6 +16,8 @@ In our application AltairCare we used machine learning and deep learning algorit
   <li>Stroke Disease</li>
   <li>Heart Disease</li>
 </ul>
+
+
 ![slide2](https://user-images.githubusercontent.com/83681204/132843407-0d59dca9-d0cc-4a3d-a75b-6d995aca761e.jpg)
 
 All the datasets used to train the models can be found in the Kaggle website
