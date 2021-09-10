@@ -6,7 +6,9 @@
 
 
 Artificial intelligence is a rapidly developing field with new improvements that happen every day, it allows the automation and simplification of human activities in different industries like agriculture, Banking and Financial Services, healthcare, travel...
+<br>
 The integration of artificial intelligence in the world of health is an application that attracts a large number of companies such as Microsoft, Google, Apple and IBM, because it simplifies the lives of patients, doctors and hospital administrators by performing tasks that are typically done by humans, but in less time and at a fraction of the cost, it also allows medical services to be provided in remote and difficult to reach places and it's able to diagnose diseases in the early stages and thus increases the chances of recovery. 
+<br>
 In our application AltairCare we used machine learning and deep learning algorithms to train highly accurate models and thus allowing users to check their chance of having one of the following diseases:
 <ul>
   <li>Liver Disease</li>
@@ -17,9 +19,9 @@ In our application AltairCare we used machine learning and deep learning algorit
   <li>Heart Disease</li>
 </ul>
 
-
+<br>
 ![slide2](https://user-images.githubusercontent.com/83681204/132843407-0d59dca9-d0cc-4a3d-a75b-6d995aca761e.jpg)
-
+<br>
 All the datasets used to train the models can be found in the Kaggle website
 
 
