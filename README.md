@@ -42,7 +42,7 @@ git clone https://github.com/Aymen1001/Healthcare-AI-WebApp.git
 ```
 
 
-<h3>Install requirements </h3>
+<h3>Install requirements: </h3>
 
 
 ```
@@ -50,7 +50,7 @@ pip install -r requirements.txt
 ```
 
 
-<h3>Run this command to start local server </h3>
+<h3>Run this command to start local server: </h3>
 
 
 ```
