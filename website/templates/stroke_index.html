@@ -1,0 +1,100 @@
+{% extends "disease_page.html" %}
+{% block page %}
+<br>
+<br>
+<br>
+<div id="disease_page">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 col-sm-6 wow fadeInLeft" data-wow-delay="0.5s">
+				<h3>Stroke</h3>
+				<h4>Overview</h4>
+				<p>A stroke occurs when the blood supply to part of your brain is interrupted or reduced, preventing brain tissue from getting oxygen and nutrients. Brain cells begin to die in minutes.
+
+				A stroke is a medical emergency, and prompt treatment is crucial. Early action can reduce brain damage and other complications.
+
+				The good news is that many fewer Americans die of stroke now than in the past. Effective treatments can also help prevent disability from stroke.
+				</p>
+				<p>Praesent eu egestas ante, sed eleifend libero. Fusce id nisl vitae lectus posuere feugiat dictum ut purus. Pellentesque eget turpis odio. Suspendisse porttitor sapien eget sem hendrerit, at rutrum tellus accumsan.</p>
+			</div>
+			<div class="col-md-6 col-sm-6 wow fadeInRight" data-wow-delay="0.5s">
+				<img class="ill_image" src="./static/images/disease_img/thestroke1.jpg">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6 col-sm-6 wow fadeInRight" data-wow-delay="0.5s">
+				<h4>Symptoms</h4>
+				<p>If you or someone you're with may be having a stroke, pay particular attention to the time the symptoms began. Some treatment options are most effective when given soon after a stroke begins.
+				Signs and symptoms of stroke include:
+				</p>
+			    <ul>
+			      <li>Trouble speaking and understanding what others are saying. You may experience confusion, slur your words or have difficulty understanding speech.</li>
+			      <li>Paralysis or numbness of the face, arm or leg. You may develop sudden numbness, weakness or paralysis in your face, arm or leg.</li>
+			      <li>Problems seeing in one or both eyes. You may suddenly have blurred or blackened vision in one or both eyes, or you may see double.</li>
+			      <li>Headache. A sudden, severe headache, which may be accompanied by vomiting, dizziness or altered consciousness, may indicate that you're having a stroke.</li>
+			      <li>Trouble walking. You may stumble or lose your balance. You may also have sudden dizziness or a loss of coordination.</li>
+			    </ul>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 col-sm-6 wow fadeInRight" style="display: inline-block;vertical-align: middle;" data-wow-delay="0.5s">
+				<h3>Model</h3>
+				<p>To make the diagnosis you need to enter the following informations :</p>
+				<ul>
+					<li>age: age of the patient</li>
+					<li>gender: Male, Female or Other</li>
+					<li>ever_married: No or Yes</li>
+					<li>work_type: children garde, Government job, Never_worked, Private, Self-employed</li>
+					<li>Residence_type: Rural or Urban</li>
+					<li>smoking_status: formerly smoked, never smoked, smokes, sometimes</li>
+					<li>hypertension: yes or no</li>
+					<li>heart_disease: yes or no</li>
+					<li>avg_glucose_level: average glucose level in blood</li>
+
+				</ul>
+			</div>
+			
+			<div class="col-md-6 col-sm-6  wow fadeInRight" data-wow-delay="0.5s">
+				<div class="flex-wrapper">
+				  <div class="single-chart">
+				    <svg viewBox="0 0 36 36" class="circular-chart orange">
+				      <path class="circle-bg"
+				        d="M18 2.0845
+				          a 15.9155 15.9155 0 0 1 0 31.831
+				          a 15.9155 15.9155 0 0 1 0 -31.831"
+				      />
+				      <path class="circle"
+				        stroke-dasharray="86, 100"
+				        d="M18 2.0845
+				          a 15.9155 15.9155 0 0 1 0 31.831
+				          a 15.9155 15.9155 0 0 1 0 -31.831"
+				      />
+				      <text x="18" y="20.35" class="percentage">81%</text>
+				    </svg>
+				    <h4 style="text-align: center;">Accuracy</h4>
+				  </div>
+				  </div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<br>
+	<br>
+	<br>
+	<div class="prediction text-center">
+	    <a href="/stroke_form" class="smoothScroll btn btn-success wow fadeInDown" data-wow-delay="2000">Predict</a>
+  	</div>
+  	<br>
+  	<br>
+  	<br>
+  	<br>
+	
+
+</div>
+
+
+		
+
+{% endblock %}
