@@ -24,7 +24,7 @@ In my application AltairCare i used machine learning and deep learning algorithm
 ![slide2](https://user-images.githubusercontent.com/83681204/132843407-0d59dca9-d0cc-4a3d-a75b-6d995aca761e.jpg)
 
 
-Each Disease have it's page with an overview and symptoms that patient may have, and also the prediction model information and required parameters that user must provide
+Each Disease have it's own page with an overview and symptoms that patient may have, and also the prediction model information and required parameters that user must provide
 
 <h2> Disease page : </h2>
 
