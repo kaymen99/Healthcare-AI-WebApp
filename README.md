@@ -9,7 +9,7 @@ Artificial intelligence is a rapidly developing field with new improvements that
 <br>
 The integration of artificial intelligence in the world of health is an application that attracts a large number of companies such as Microsoft, Google, Apple and IBM, because it simplifies the lives of patients, doctors and hospital administrators by performing tasks that are typically done by humans, but in less time and at a fraction of the cost, it also allows medical services to be provided in remote and difficult to reach places and it's able to diagnose diseases in the early stages and thus increases the chances of recovery. 
 <br>
-In our application AltairCare we used machine learning and deep learning algorithms to train highly accurate models and thus allowing users to check their chance of having one of the following diseases:
+In my application AltairCare i used machine learning and deep learning algorithms to train highly accurate models and thus allowing users to check their chance of having one of the following diseases:
 <ul>
   <li>Liver Disease</li>
   <li>Pneumonia Disease</li>
