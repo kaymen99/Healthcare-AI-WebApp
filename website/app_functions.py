@@ -19,7 +19,7 @@ def pred(path):
     data = load_img(path, target_size=(224, 224, 3))
     data = np.asarray(data).reshape((-1, 224, 224, 3))
     data = data * 1.0 / 255
-    predicted = np.round(get_model('./website/app_models/model_pneumonia').predict(data)[0])[0]
+    predicted = np.round(get_model('./website/app_models/pneumonia_model.h5').predict(data)[0])[0]
     return predicted
 
 def ValuePredictor(to_predict_list):
