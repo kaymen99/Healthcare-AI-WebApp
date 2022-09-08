@@ -48,7 +48,7 @@ All the datasets used to train the models can be found in the Kaggle website
 
 
 ```sh
-git clone https://github.com/Aymen1001/Healthcare-AI-WebApp.git
+git clone https://github.com/kaymen99/Healthcare-AI-WebApp.git
 cd Healthcare-AI-WebApp
 ```
 
