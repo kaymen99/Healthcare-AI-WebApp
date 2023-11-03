@@ -45,26 +45,21 @@ All the datasets used to train the models can be found in the Kaggle website
 <h2> How to run this project : </h2>
 <h3>Clone this repository: </h3>
 
-
 ```sh
 git clone https://github.com/kaymen99/Healthcare-AI-WebApp.git
 cd Healthcare-AI-WebApp
 ```
 
-
-<h3>Install requirements: </h3>
-
+<h3>Install requirements (using a virtual environment is preferable): </h3>
 
 ```sh
 pip install -r requirements.txt
 ```
 
-
 <h3>Run this command to start local server: </h3>
 
-
 ```sh
-python wsgi.py
+python app.py
 ```
 
 
